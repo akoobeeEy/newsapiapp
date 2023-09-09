@@ -9,7 +9,7 @@ export class Sports extends Component {
   };
   async getSports(){
     try{
-      let {data} = await request("?country=us&category=sports&apiKey=0d4ab5cbc5c44296829e13100a5d155f");
+      let {data} = await request("?country=us&category=sports&apiKey=1a34246c796c44588372bdb92542f6f8");
       this.setState({sports: data.articles});
     }catch (err){
       console.log(err);

@@ -12,7 +12,7 @@ export class Science extends Component {
     try {
       this.setState({ loading: true });
       let { data } = await request(
-        "?country=us&category=science&apiKey=0d4ab5cbc5c44296829e13100a5d155f"
+        "?country=us&category=science&apiKey=1a34246c796c44588372bdb92542f6f8"
       );
       this.setState({ science: data.articles });
     } catch (err) {

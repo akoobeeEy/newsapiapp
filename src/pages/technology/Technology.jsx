@@ -11,7 +11,7 @@ export class Technology extends Component {
   async getTechnology(){
     try{
       this.setState({loading:true})
-      let {data} = await request("?country=us&category=technology&apiKey=0d4ab5cbc5c44296829e13100a5d155f");
+      let {data} = await request("?country=us&category=technology&apiKey=1a34246c796c44588372bdb92542f6f8");
       this.setState({technology: data.articles});
     }catch (err){
       console.log(err);

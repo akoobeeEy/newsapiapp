@@ -12,7 +12,7 @@ export class Health extends Component {
     try {
       this.setState({loading: true})
       let { data } = await request(
-        "?country=us&category=health&apiKey=0d4ab5cbc5c44296829e13100a5d155f"
+        "?country=us&category=health&apiKey=1a34246c796c44588372bdb92542f6f8"
       );
       this.setState({ health: data.articles });
     } catch (err) {
